@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Arpan Magar · Founder, Jarghaa Furniture</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#EEEAE2;--ink:#1B1612;--mute:#5F564C;--line:#CFC7BA;--card:#F7F4EE;--brass:#946C1C;--wood:#6B4429;--dk:#17120E;--dk-ink:#EFE7DA;
+--serif:"Young Serif",Georgia,"Times New Roman",serif;--sans:"Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#100D0A;--ink:#EDE6DA;--mute:#A89E91;--line:#2E2720;--card:#1A1510;--brass:#D2A94C}}
+:root[data-theme="dark"]{--bg:#100D0A;--ink:#EDE6DA;--mute:#A89E91;--line:#2E2720;--card:#1A1510;--brass:#D2A94C}
+*,*::before,*::after{box-sizing:inherit}
+html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;min-height:100%;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 var(--sans)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--brass);outline-offset:3px}
+.wrap{max-width:70rem;margin:0 auto;padding:0 1.25rem}
+.hero{background:var(--dk);color:var(--dk-ink);background-image:radial-gradient(60rem 30rem at 85% 40%,rgba(194,153,58,.16),transparent 70%)}
+.bar{display:flex;justify-content:space-between;align-items:center;padding:1.25rem 0}
+.bar strong{font:400 1.1rem var(--serif)}
+.bar nav{display:flex;gap:1.4rem;font-size:.95rem}
+.bar nav a{text-decoration:none;opacity:.75}.bar nav a:hover{opacity:1}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:2rem;align-items:center;padding:3rem 0 4.5rem}
+h1{font:400 clamp(3rem,9vw,6.6rem)/.98 var(--serif);margin:0 0 1.5rem;letter-spacing:-.015em}
+.sub{font-size:1.25rem;max-width:30rem;margin:0 0 2rem;color:#CDC2B2}
+.btns{display:flex;flex-wrap:wrap;gap:.8rem}
+.btn{display:inline-block;padding:.75rem 1.4rem;border-radius:.4rem;text-decoration:none;font-weight:600;border:2px solid #D2A94C}
+.btn.main{background:#D2A94C;color:#17120E}.btn.alt{color:var(--dk-ink)}
+.btn:hover{transform:translateY(-2px)}
+.joint{width:100%;height:auto;overflow:visible}
+.joint .a{animation:slideA 1.6s .3s cubic-bezier(.2,.8,.2,1) both}
+.joint .b{animation:slideB 1.6s .3s cubic-bezier(.2,.8,.2,1) both}
+@keyframes slideA{from{transform:translateX(-70px);opacity:0}to{transform:none;opacity:1}}
+@keyframes slideB{from{transform:translateX(70px);opacity:0}to{transform:none;opacity:1}}
+section{padding:4.5rem 0}
+h2{font:400 clamp(1.9rem,4vw,2.8rem)/1.12 var(--serif);margin:0 0 1.5rem}
+.feature{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start}
+.feature p{margin:0 0 1rem;max-width:34rem}
+.facts{margin:0;padding:1.75rem;background:var(--card);border:1px solid var(--line);border-radius:.6rem;display:grid;gap:1.1rem}
+.facts dt{font-size:.9rem;color:var(--mute)}
+.facts dd{margin:0;font:400 1.3rem var(--serif)}
+.facts a{text-decoration-color:var(--brass);text-decoration-thickness:2px;text-underline-offset:.2em}
+.timeline{list-style:none;margin:0;padding:0;border-left:2px solid var(--line)}
+.timeline li{position:relative;padding:0 0 2rem 1.6rem;max-width:44rem}
+.timeline li::before{content:"";position:absolute;left:-8px;top:.5rem;width:14px;height:14px;border-radius:50%;background:var(--bg);border:3px solid var(--brass)}
+.timeline li.now::before{background:var(--brass)}
+.timeline h3{font:600 1.1rem var(--sans);margin:0}
+.timeline .org{color:var(--brass);font-weight:600}
+.timeline .when{display:block;color:var(--mute);font-size:.92rem;margin:.1rem 0 .4rem}
+.timeline p{margin:0;color:var(--mute);max-width:40rem}
+.skills{display:flex;flex-wrap:wrap;gap:.6rem;padding:0;margin:0;list-style:none}
+.skills li{background:var(--card);border:1px solid var(--line);border-radius:.4rem;padding:.45rem 1rem}
+.contact{background:var(--dk);color:var(--dk-ink)}
+.contact h2{margin-bottom:.75rem}.contact p{margin:0 0 1.75rem;color:#CDC2B2;max-width:30rem}
+footer{background:var(--dk);color:#8F8576;font-size:.9rem;padding:0 0 2.25rem}
+@media (max-width:780px){.hero-grid,.feature{grid-template-columns:1fr}.hero-grid{padding-bottom:3rem}.joint{max-width:22rem}.feature{gap:2rem}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.joint .a,.joint .b{animation:none}.btn:hover{transform:none}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div class="bar">
+      <strong>Arpan Magar</strong>
+      <nav aria-label="Main"><a href="#jarghaa">Jarghaa</a><a href="#path">Career</a><a href="#contact">Contact</a></nav>
+    </div>
+    <div class="hero-grid">
+      <div>
+        <h1>Arpan Magar</h1>
+        <p class="sub">Founder of Jarghaa Furniture, making luxury handmade furniture in Lalitpur, Nepal.</p>
+        <div class="btns">
+          <a class="btn main" href="https://www.facebook.com/jarghaa">See Jarghaa</a>
+          <a class="btn alt" href="https://www.linkedin.com/in/arpan-magar-98564b136/">LinkedIn profile</a>
+        </div>
+      </div>
+      <svg class="joint" viewBox="0 0 400 300" role="img" aria-label="Two wooden boards locking together with a dovetail joint">
+        <g class="a"><path d="M30 40H200V80L240 70V120L200 110V170L240 160V210L200 200V260H30Z" fill="#6B4429" stroke="#D2A94C" stroke-width="3" stroke-linejoin="round"/>
+          <path d="M45 70H180M45 120H180M45 170H180M45 220H180" stroke="#D2A94C" stroke-opacity=".25" stroke-width="2"/></g>
+        <g class="b"><path d="M200 40V80L240 70V120L200 110V170L240 160V210L200 200V260H370V40Z" fill="#8A5C3A" stroke="#D2A94C" stroke-width="3" stroke-linejoin="round"/>
+          <path d="M255 70H355M255 120H355M255 170H355M255 220H355" stroke="#D2A94C" stroke-opacity=".25" stroke-width="2"/></g>
+      </svg>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="jarghaa" class="feature">
+    <div>
+      <h2>Furniture made by hand, built to last</h2>
+      <p>Jarghaa Furniture is my workshop in Lalitpur. We make luxury handmade furniture, and every piece is shaped with the care you only get from craft.</p>
+      <p>Running it draws on everything before it: reading what customers need, negotiating, managing property and teams, and keeping operations steady.</p>
+    </div>
+    <dl class="facts">
+      <div><dt>Role</dt><dd>Owner and CEO</dd></div>
+      <div><dt>Since</dt><dd>June 2025</dd></div>
+      <div><dt>Where</dt><dd>Lalitpur, Nepal</dd></div>
+      <div><dt>See the work</dt><dd><a href="https://www.facebook.com/jarghaa">facebook.com/jarghaa</a></dd></div>
+    </dl>
+  </section>
+
+  <section id="path">
+    <h2>Career</h2>
+    <ol class="timeline">
+      <li class="now"><h3>Owner and CEO · <span class="org">Jarghaa Furniture</span></h3><span class="when">June 2025 to present · Lalitpur, Nepal</span><p>Leading a workshop that makes luxury handmade furniture.</p></li>
+      <li><h3>Admin Manager · <span class="org">UK Sansar Estate Agency</span></h3><span class="when">June 2024 to November 2025</span><p>A newly established agency transforming the rental market with personalized services. Its work spans residential construction, deal sourcing, HMO management, serviced accommodation, and property development.</p></li>
+      <li><h3>Administrator / General Manager · <span class="org">Dokohomes</span></h3><span class="when">December 2023 to November 2025</span></li>
+      <li><h3>L2/Enterprise Monitoring Officer · <span class="org">Websurfer Fiber Internet</span></h3><span class="when">January 2022 to November 2023</span><p>Kept corporate networks running, diagnosed customer issues, configured routers and switches, and coordinated field technicians.</p></li>
+      <li><h3>Sales and Technical Executive · <span class="org">Proshore</span></h3><span class="when">September 2017 to November 2020</span><p>Sales and customer service for a software development services company.</p></li>
+      <li><h3>Information Technology · <span class="org">ISMT</span></h3><span class="when">2016 to 2019</span></li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Strengths</h2>
+    <ul class="skills"><li>Negotiation</li><li>Real estate</li><li>Property management</li><li>Networking</li><li>Programming</li><li>Operating systems</li><li>Customer service</li><li>Team leadership</li></ul>
+  </section>
+</main>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <h2>Let's talk</h2>
+    <p>For furniture enquiries, see the Jarghaa page. For professional references or anything else, find me on LinkedIn.</p>
+    <div class="btns">
+      <a class="btn main" href="https://www.facebook.com/jarghaa">Jarghaa on Facebook</a>
+      <a class="btn alt" href="https://www.linkedin.com/in/arpan-magar-98564b136/">LinkedIn</a>
+    </div>
+  </div>
+</section>
+<footer><div class="wrap">Arpan Magar · Lalitpur, Nepal</div></footer>
+</body>
+</html>
