@@ -69,9 +69,11 @@ This replaced the earlier Formspree form, so no third-party signup is needed.
 
 Search the code for `TODO` (comments) and the visible placeholders:
 
-- [ ] **Photos.** Drop gallery images into `assets/images/` and add an
-      `og-cover.jpg` (1200×630) for even better link previews. Update the `alt`
-      text in `index.html`.
+- [ ] **Gallery photos.** The gallery currently uses three on-brand SVG tiles
+      (`assets/images/piece-1..3.svg`) so the page looks finished. Replace them
+      with real photographs and update the `alt` text in `index.html`.
+- [ ] **Share image.** Add an `og-cover.jpg` (1200×630) for richer link
+      previews; the headshot is used until then.
 - [ ] **Stats.** Figures (180+ pieces, 130+ clients) are plausible placeholders —
       replace with your real numbers on `index.html` and `invest.html`.
 - [ ] **Testimonials.** Three quotes are drafted with placeholder Nepali names
