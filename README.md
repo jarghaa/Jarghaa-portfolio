@@ -20,6 +20,7 @@ Plain HTML + CSS, no build step. Deployed to GitHub Pages via
 | --- | --- |
 | `index.html` | Home — story, numbers, Jarghaa showcase, services, career, strengths, testimonials, Off the pitch (Liverpool), notes, investment band, contact |
 | `invest.html` | Investors & partners — opportunity, what I'm looking for, traction, meeting request |
+| `pitch.html` | One-page investor brief — opens ready to Print / Save as PDF |
 | `notes/index.html` | Notes hub — list of essays |
 | `notes/why-handmade.html` | First essay: "Why I chose handmade furniture over mass production" |
 | `404.html` | Friendly not-found page |
@@ -30,6 +31,7 @@ Plain HTML + CSS, no build step. Deployed to GitHub Pages via
 Jarghaa-portfolio/
 ├── index.html            # home page (content + JSON-LD Person schema)
 ├── invest.html           # investor / partner page
+├── pitch.html            # one-page investor brief (print-ready)
 ├── notes/
 │   ├── index.html        # notes hub
 │   └── why-handmade.html # first essay (JSON-LD Article schema)
@@ -75,8 +77,8 @@ Search the code for `TODO` (comments) and the visible placeholders:
 - [ ] **Testimonials.** Three quotes are drafted with placeholder Nepali names
       (Prarambha Shakya, Nischal Tuladhar, Dikshya Amatya) — swap in real,
       attributable quotes with permission before publishing.
-- [ ] **Pitch deck.** Upload your deck to `assets/jarghaa-pitch.pdf` (linked
-      from `invest.html`).
+- [x] **Pitch brief.** Added as `pitch.html` (print-ready). Update its figures
+      alongside the site stats when your real numbers are ready.
 - [ ] **URLs.** If you use a custom domain, update the `canonical`, Open Graph
       `og:url`, `sitemap.xml`, `robots.txt`, and the absolute paths in
       `404.html` (currently the GitHub Pages URL).
