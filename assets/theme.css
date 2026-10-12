@@ -162,6 +162,15 @@ footer .foot-top{text-align:center;margin-bottom:1.5rem}
 .share{display:flex;gap:.6rem;flex-wrap:wrap;align-items:center;margin-top:2rem}
 .share span{font-size:.9rem;color:var(--mute)}
 
+/* Fan / personal section */
+.heroes{list-style:none;padding:0;margin:1.25rem 0 0;display:grid;grid-template-columns:1fr 1fr;gap:.7rem 2rem}
+.heroes li{padding-left:1.1rem;position:relative}
+.heroes li::before{content:"";position:absolute;left:0;top:.6em;width:.5rem;height:.5rem;border-radius:50%;background:var(--gold)}
+.heroes strong{color:var(--ink);font-weight:600}
+.heroes span{color:var(--mute)}
+.pull{margin:1.75rem 0 0;padding-left:1.1rem;border-left:3px solid var(--gold);font:400 1.25rem/1.45 var(--serif)}
+@media (max-width:700px){.heroes{grid-template-columns:1fr}}
+
 /* Utilities */
 .skip{position:absolute;left:-999px}
 .skip:focus{left:1rem;top:1rem;z-index:10;background:var(--gold);color:#0B1F3A;padding:.6rem 1rem;border-radius:.4rem}

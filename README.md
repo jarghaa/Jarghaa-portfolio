@@ -18,7 +18,7 @@ Plain HTML + CSS, no build step. Deployed to GitHub Pages via
 
 | Page | Purpose |
 | --- | --- |
-| `index.html` | Home — story, numbers, Jarghaa showcase, services, career, strengths, testimonials, notes teaser, investment band, contact |
+| `index.html` | Home — story, numbers, Jarghaa showcase, services, career, strengths, testimonials, Liverpool section, notes, investment band, contact |
 | `invest.html` | Investors & partners — opportunity, what I'm looking for, traction, meeting request |
 | `notes/index.html` | Notes hub — list of essays |
 | `notes/why-handmade.html` | First essay: "Why I chose handmade furniture over mass production" |
@@ -70,10 +70,11 @@ Search the code for `TODO` (comments) and the visible placeholders:
 - [ ] **Photos.** Drop gallery images into `assets/images/` and add an
       `og-cover.jpg` (1200×630) for even better link previews. Update the `alt`
       text in `index.html`.
-- [ ] **Stats.** Replace the figures in the "By the numbers" section on
-      `index.html` and the "Traction & financials" section on `invest.html`.
-- [ ] **Testimonials.** Replace the placeholder quotes on `index.html` with
-      real, attributable quotes (ask permission first).
+- [ ] **Stats.** Figures (180+ pieces, 130+ clients) are plausible placeholders —
+      replace with your real numbers on `index.html` and `invest.html`.
+- [ ] **Testimonials.** Three quotes are drafted with placeholder Nepali names
+      (Prarambha Shakya, Nischal Tuladhar, Dikshya Amatya) — swap in real,
+      attributable quotes with permission before publishing.
 - [ ] **Pitch deck.** Upload your deck to `assets/jarghaa-pitch.pdf` (linked
       from `invest.html`).
 - [ ] **URLs.** If you use a custom domain, update the `canonical`, Open Graph
