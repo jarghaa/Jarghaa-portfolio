@@ -1,6 +1,6 @@
-# Arpan Magar: Portfolio Website
+# Arpan Jargha Magar: Portfolio Website
 
-A professional multi-page portfolio for **Arpan Magar**, founder and CEO of
+A professional multi-page portfolio for **Arpan Jargha Magar**, founder and CEO of
 [Jarghaa Furniture](https://www.facebook.com/jarghaa) (Lalitpur, Nepal).
 
 Plain HTML + CSS, no build step. Deployed to GitHub Pages via
@@ -55,8 +55,14 @@ Search the code for `TODO` (comments) and the visible placeholders:
       `index.html` and the "Traction & financials" section on `invest.html`.
 - [ ] **Testimonials.** Replace the placeholder quotes on `index.html` with
       real, attributable quotes (ask permission first).
-- [ ] **Email.** Change `hello@arpanmagar.com` (home + investor page) to your
-      real address. Add a WhatsApp/phone link if you want enquiries there.
+- [x] **Email.** Set to `jarghaa3314@gmail.com` on the home and investor pages.
+- [ ] **WhatsApp.** Replace the placeholder number `9770000000000` in the
+      `wa.me` links (home + investor page) with your real number in
+      international format, digits only (e.g. `9779812345678`). Consider
+      WhatsApp Business for a catalogue and auto-replies.
+- [ ] **Headshot.** Save your portrait as `assets/images/headshot.jpg`
+      (square, ~800×800). The hero falls back to the dovetail graphic until
+      the file exists.
 - [ ] **Contact forms.** Create a free form endpoint at
       [Formspree](https://formspree.io) or use Netlify Forms, then set the
       `<form action="...">` value on both forms (currently `REPLACE_ME`).
