@@ -18,7 +18,7 @@ Plain HTML + CSS, no build step. Deployed to GitHub Pages via
 
 | Page | Purpose |
 | --- | --- |
-| `index.html` | Home — story, numbers, Jarghaa showcase, services, career, strengths, testimonials, Liverpool section, notes, investment band, contact |
+| `index.html` | Home — story, numbers, Jarghaa showcase, services, career, strengths, testimonials, Off the pitch (Liverpool), notes, investment band, contact |
 | `invest.html` | Investors & partners — opportunity, what I'm looking for, traction, meeting request |
 | `notes/index.html` | Notes hub — list of essays |
 | `notes/why-handmade.html` | First essay: "Why I chose handmade furniture over mass production" |
