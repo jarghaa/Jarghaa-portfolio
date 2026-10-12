@@ -8,11 +8,17 @@ Plain HTML + CSS, no build step. Deployed to GitHub Pages via
 
 **Live site:** https://jarghaa.github.io/Jarghaa-portfolio/
 
+## Design
+
+- **Palette:** Navy Blue · Crisp White · Gold hardware (with a deep-navy dark mode).
+- **Type:** Young Serif for headings, Instrument Sans for body.
+- **Motif:** a dovetail-joint brand mark, used small and centred in the footer.
+
 ## Pages
 
 | Page | Purpose |
 | --- | --- |
-| `index.html` | Home — story, numbers, Jarghaa showcase, services, career, strengths, testimonials, notes teaser, investment band, contact form |
+| `index.html` | Home — story, numbers, Jarghaa showcase, services, career, strengths, testimonials, notes teaser, investment band, contact |
 | `invest.html` | Investors & partners — opportunity, what I'm looking for, traction, meeting request |
 | `notes/index.html` | Notes hub — list of essays |
 | `notes/why-handmade.html` | First essay: "Why I chose handmade furniture over mass production" |
@@ -29,46 +35,57 @@ Jarghaa-portfolio/
 │   └── why-handmade.html # first essay (JSON-LD Article schema)
 ├── 404.html              # not-found page
 ├── assets/
-│   ├── theme.css         # all styles (light + dark themes)
-│   └── images/           # put photos here (pieces, headshot, og-cover)
+│   ├── theme.css         # all styles (navy/white/gold, light + dark)
+│   └── images/
+│       └── headshot.jpg  # portrait used in the hero and link previews
 ├── robots.txt            # search-engine crawl rules
 ├── sitemap.xml           # sitemap for search engines
 └── README.md
 ```
 
+## Email privacy (spam protection)
+
+The email address is **not** written anywhere in the HTML. It is split into
+character codes in a small script and rebuilt in the browser, so:
+
+- **People can still email you** — the "Email me" button and the contact form
+  both open the visitor's mail app with the message ready to send.
+- **Harvesting bots can't read it** — scrapers that only read HTML (no
+  JavaScript) never see the address.
+
+This replaced the earlier Formspree form, so no third-party signup is needed.
+
 ## SEO & sharing built in
 
 - Per-page `<title>`, meta description, canonical URL.
-- Open Graph + Twitter card tags for rich link previews.
+- Open Graph + Twitter card tags (share image = your headshot).
 - JSON-LD structured data (`Person` on home, `Article` on the essay).
 - `sitemap.xml` and `robots.txt`.
 - Inline SVG favicon and `theme-color`.
 
-## Before you publish — fill these in
+## Before you publish — remaining placeholders
 
 Search the code for `TODO` (comments) and the visible placeholders:
 
 - [ ] **Photos.** Drop gallery images into `assets/images/` and add an
-      `og-cover.jpg` for link previews. Update the `alt` text in `index.html`.
-      (The headshot is already set: `assets/headshot.jpg`.)
+      `og-cover.jpg` (1200×630) for even better link previews. Update the `alt`
+      text in `index.html`.
 - [ ] **Stats.** Replace the figures in the "By the numbers" section on
       `index.html` and the "Traction & financials" section on `invest.html`.
 - [ ] **Testimonials.** Replace the placeholder quotes on `index.html` with
       real, attributable quotes (ask permission first).
-- [x] **Email.** Set to `jarghaa3314@gmail.com` on the home and investor pages.
-- [x] **WhatsApp.** Set to `+977 9818654453` (`https://wa.me/9779818654453`)
-      on the home and investor pages. Consider WhatsApp Business for a
-      catalogue and auto-replies.
-- [x] **Headshot.** Added as `assets/headshot.jpg` and shown in the hero
-      (the dovetail graphic is the fallback).
-- [ ] **Contact forms.** Create a free form endpoint at
-      [Formspree](https://formspree.io) or use Netlify Forms, then set the
-      `<form action="...">` value on both forms (currently `REPLACE_ME`).
 - [ ] **Pitch deck.** Upload your deck to `assets/jarghaa-pitch.pdf` (linked
       from `invest.html`).
 - [ ] **URLs.** If you use a custom domain, update the `canonical`, Open Graph
       `og:url`, `sitemap.xml`, `robots.txt`, and the absolute paths in
       `404.html` (currently the GitHub Pages URL).
+
+Done already:
+
+- [x] **Headshot** — `assets/images/headshot.jpg` in the hero and link previews.
+- [x] **WhatsApp** — `https://wa.me/9779818654453` on home + investor pages.
+- [x] **Email** — hidden from scrapers, usable via button and form.
+- [x] **Theme** — navy / white / gold.
 
 ## Publish with GitHub Pages
 
@@ -80,7 +97,7 @@ the whole repository.
 2. Watch the run under the repo's **Actions** tab.
 3. The site goes live at https://jarghaa.github.io/Jarghaa-portfolio/.
 
-### Custom domain (recommended: `arpanmagar.com`)
+### Custom domain (recommended)
 
 1. Add a `CNAME` file containing just your domain (e.g. `arpanmagar.com`).
 2. In **Settings → Pages → Custom domain**, enter the same domain.
@@ -90,6 +107,8 @@ the whole repository.
 ## Edit the site
 
 - Content lives in the HTML files; styles live in `assets/theme.css`.
+- Colours are CSS variables at the top of `theme.css` — change them in one
+  place to re-skin the whole site.
 - Preview locally:
   ```bash
   python3 -m http.server
