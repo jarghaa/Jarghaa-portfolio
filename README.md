@@ -1,16 +1,33 @@
 # Arpan Magar: Portfolio Website
 
-A single-page professional portfolio for **Arpan Magar**, founder and CEO of
+A professional multi-page portfolio for **Arpan Magar**, founder and CEO of
 [Jarghaa Furniture](https://www.facebook.com/jarghaa) (Lalitpur, Nepal).
 
-Plain HTML + CSS, no build step. Deployed to GitHub Pages via the workflow in
-`.github/workflows/static.yml`.
+Plain HTML + CSS, no build step. Deployed to GitHub Pages via
+`.github/workflows/static.yml` on every push to `main`.
+
+**Live site:** https://jarghaa.github.io/Jarghaa-portfolio/
+
+## Pages
+
+| Page | Purpose |
+| --- | --- |
+| `index.html` | Home — story, numbers, Jarghaa showcase, services, career, strengths, testimonials, notes teaser, investment band, contact form |
+| `invest.html` | Investors & partners — opportunity, what I'm looking for, traction, meeting request |
+| `notes/index.html` | Notes hub — list of essays |
+| `notes/why-handmade.html` | First essay: "Why I chose handmade furniture over mass production" |
+| `404.html` | Friendly not-found page |
 
 ## Project structure
 
 ```
 Jarghaa-portfolio/
-├── index.html            # the whole page (content + structured data)
+├── index.html            # home page (content + JSON-LD Person schema)
+├── invest.html           # investor / partner page
+├── notes/
+│   ├── index.html        # notes hub
+│   └── why-handmade.html # first essay (JSON-LD Article schema)
+├── 404.html              # not-found page
 ├── assets/
 │   ├── theme.css         # all styles (light + dark themes)
 │   └── images/           # put photos here (pieces, headshot, og-cover)
@@ -19,47 +36,45 @@ Jarghaa-portfolio/
 └── README.md
 ```
 
-## What's on the page
+## SEO & sharing built in
 
-1. **Hero** — name, positioning line, and two calls to action.
-2. **About / Story** — the narrative arc: IT → property → craft.
-3. **By the numbers** — credibility stats.
-4. **Jarghaa Furniture** — the workshop, a photo gallery, and CTAs.
-5. **What I can help with** — furniture, property/operations, advisory.
-6. **Career** — the full timeline.
-7. **Strengths** — skills.
-8. **In their words** — testimonials.
-9. **Let's build something bigger** — partnership/investment band.
-10. **Contact** — email, social links, and a contact form.
+- Per-page `<title>`, meta description, canonical URL.
+- Open Graph + Twitter card tags for rich link previews.
+- JSON-LD structured data (`Person` on home, `Article` on the essay).
+- `sitemap.xml` and `robots.txt`.
+- Inline SVG favicon and `theme-color`.
 
 ## Before you publish — fill these in
 
-Search the file for `TODO` (comments) and the visible placeholders:
+Search the code for `TODO` (comments) and the visible placeholders:
 
-- [ ] **Photos.** Drop real images into `assets/images/` (gallery pieces,
-      an `og-cover.jpg` for link previews, and a headshot). Update the `alt`
-      text in `index.html`.
-- [ ] **Stats.** Replace the figures in the "By the numbers" section with your
-      verified numbers.
-- [ ] **Testimonials.** Replace the placeholder quotes with real, attributable
-      quotes (ask permission first).
-- [ ] **Email.** Change `hello@arpanmagar.com` in the contact section to your
+- [ ] **Photos.** Drop real images into `assets/images/` (gallery pieces, an
+      `og-cover.jpg` for link previews, and a headshot). Update the `alt` text
+      in `index.html`.
+- [ ] **Stats.** Replace the figures in the "By the numbers" section on
+      `index.html` and the "Traction & financials" section on `invest.html`.
+- [ ] **Testimonials.** Replace the placeholder quotes on `index.html` with
+      real, attributable quotes (ask permission first).
+- [ ] **Email.** Change `hello@arpanmagar.com` (home + investor page) to your
       real address. Add a WhatsApp/phone link if you want enquiries there.
-- [ ] **Contact form.** Create a free form endpoint at
+- [ ] **Contact forms.** Create a free form endpoint at
       [Formspree](https://formspree.io) or use Netlify Forms, then set the
-      `<form action="...">` value (currently `REPLACE_ME`).
+      `<form action="...">` value on both forms (currently `REPLACE_ME`).
+- [ ] **Pitch deck.** Upload your deck to `assets/jarghaa-pitch.pdf` (linked
+      from `invest.html`).
 - [ ] **URLs.** If you use a custom domain, update the `canonical`, Open Graph
-      `og:url`, `sitemap.xml`, and `robots.txt` URLs (currently the GitHub
-      Pages URL `https://jarghaa.github.io/Jarghaa-portfolio/`).
+      `og:url`, `sitemap.xml`, `robots.txt`, and the absolute paths in
+      `404.html` (currently the GitHub Pages URL).
 
 ## Publish with GitHub Pages
 
-The repo already includes a Pages workflow that deploys on every push to
-`main`:
+Pages is already enabled for this repo (Source: **GitHub Actions**). Any push
+to `main` triggers the workflow in `.github/workflows/static.yml` and deploys
+the whole repository.
 
-1. Push `main` to GitHub.
-2. Repo **Settings → Pages → Build and deployment → Source: GitHub Actions**.
-3. The site goes live at `https://jarghaa.github.io/Jarghaa-portfolio/`.
+1. Merge your changes into `main`.
+2. Watch the run under the repo's **Actions** tab.
+3. The site goes live at https://jarghaa.github.io/Jarghaa-portfolio/.
 
 ### Custom domain (recommended: `arpanmagar.com`)
 
@@ -70,7 +85,7 @@ The repo already includes a Pages workflow that deploys on every push to
 
 ## Edit the site
 
-- Text lives in `index.html`; styles live in `assets/theme.css`.
+- Content lives in the HTML files; styles live in `assets/theme.css`.
 - Preview locally:
   ```bash
   python3 -m http.server
@@ -79,9 +94,10 @@ The repo already includes a Pages workflow that deploys on every push to
 
 ## Roadmap (next phases)
 
-- Publish 1–2 blog posts / notes for thought leadership and SEO.
+- Publish a new note each month for thought leadership and SEO.
 - Keep LinkedIn updated to mirror the site.
 - Pitch the founder story to Nepali business media for PR.
 - Register Jarghaa on Crunchbase/F6S for investor discovery.
 - Add a newsletter (Mailchimp) for investor updates.
 - Optional: a Nepali-language toggle.
+

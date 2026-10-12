@@ -129,6 +129,29 @@ footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
 footer a{color:#CDC2B2;text-decoration:none}
 footer a:hover{text-decoration:underline}
 
+/* Subpages */
+.page-head{background:var(--dk);color:var(--dk-ink);padding:1.25rem 0 2.75rem;
+  background-image:radial-gradient(50rem 24rem at 90% 10%,rgba(194,153,58,.15),transparent 70%)}
+.page-head h1{font-size:clamp(2.2rem,5vw,3.6rem);margin:.5rem 0 .5rem}
+.page-head p{color:#CDC2B2;max-width:44rem;margin:0}
+.prose{max-width:44rem}
+.prose h2{margin-top:2.75rem}
+.prose h3{margin-top:1.75rem}
+.prose .meta{color:var(--mute);font-size:.92rem;margin:0 0 2rem}
+.prose p,.prose li{max-width:44rem}
+.prose blockquote{margin:1.5rem 0;padding-left:1.2rem;border-left:3px solid var(--brass);
+  font:400 1.15rem/1.5 var(--serif)}
+.post-list{list-style:none;padding:0;margin:0;display:grid;gap:1.25rem}
+.post-list li{border:1px solid var(--line);border-radius:.6rem;padding:1.4rem;background:var(--card)}
+.post-list h3{margin-bottom:.35rem}
+.post-list p{margin:0 0 .6rem;color:var(--mute)}
+.post-list a{font-weight:600;text-decoration-color:var(--brass);text-decoration-thickness:2px;text-underline-offset:.2em}
+.crumbs{font-size:.92rem;margin:0 0 .5rem}
+.crumbs a{color:#CDC2B2;text-decoration:none}
+.crumbs a:hover{text-decoration:underline}
+.share{display:flex;gap:.6rem;flex-wrap:wrap;align-items:center;margin-top:2rem}
+.share span{font-size:.9rem;color:var(--mute)}
+
 /* Utilities */
 .skip{position:absolute;left:-999px}
 .skip:focus{left:1rem;top:1rem;z-index:10;background:var(--brass);color:#17120E;padding:.6rem 1rem;border-radius:.4rem}
