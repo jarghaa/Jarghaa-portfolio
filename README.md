@@ -1,43 +1,87 @@
 # Arpan Magar: Portfolio Website
 
-A single-page portfolio for Arpan Magar, founder of Jarghaa Furniture (Lalitpur, Nepal).
-Plain HTML and CSS with no build step, so it works on any static host.
+A single-page professional portfolio for **Arpan Magar**, founder and CEO of
+[Jarghaa Furniture](https://www.facebook.com/jarghaa) (Lalitpur, Nepal).
+
+Plain HTML + CSS, no build step. Deployed to GitHub Pages via the workflow in
+`.github/workflows/static.yml`.
 
 ## Project structure
 
 ```
-arpan-magar-portfolio/
-├── index.html          # the whole site (HTML + CSS)
-├── assets/images/      # put furniture photos here
-├── .nojekyll           # tells GitHub Pages to serve files as-is
-├── .gitignore
+Jarghaa-portfolio/
+├── index.html            # the whole page (content + structured data)
+├── assets/
+│   ├── theme.css         # all styles (light + dark themes)
+│   └── images/           # put photos here (pieces, headshot, og-cover)
+├── robots.txt            # search-engine crawl rules
+├── sitemap.xml           # sitemap for search engines
 └── README.md
 ```
 
-## Publish it live with GitHub Pages
+## What's on the page
 
-1. Create a new repository on GitHub, for example `arpan-magar-portfolio`. Keep it empty (no README).
-2. In a terminal, from inside this folder, run:
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial portfolio site"
-   git branch -M main
-   git remote add origin https://github.com/YOUR-USERNAME/arpan-magar-portfolio.git
-   git push -u origin main
-   ```
-3. On GitHub, open the repository, then **Settings → Pages**.
-4. Under **Build and deployment**, set **Source** to **Deploy from a branch**, choose **main** and **/ (root)**, then **Save**.
-5. After a minute or two, the site is live at `https://YOUR-USERNAME.github.io/arpan-magar-portfolio/`.
+1. **Hero** — name, positioning line, and two calls to action.
+2. **About / Story** — the narrative arc: IT → property → craft.
+3. **By the numbers** — credibility stats.
+4. **Jarghaa Furniture** — the workshop, a photo gallery, and CTAs.
+5. **What I can help with** — furniture, property/operations, advisory.
+6. **Career** — the full timeline.
+7. **Strengths** — skills.
+8. **In their words** — testimonials.
+9. **Let's build something bigger** — partnership/investment band.
+10. **Contact** — email, social links, and a contact form.
 
-**Tip:** name the repository `YOUR-USERNAME.github.io` to get the shorter address `https://YOUR-USERNAME.github.io/`.
+## Before you publish — fill these in
+
+Search the file for `TODO` (comments) and the visible placeholders:
+
+- [ ] **Photos.** Drop real images into `assets/images/` (gallery pieces,
+      an `og-cover.jpg` for link previews, and a headshot). Update the `alt`
+      text in `index.html`.
+- [ ] **Stats.** Replace the figures in the "By the numbers" section with your
+      verified numbers.
+- [ ] **Testimonials.** Replace the placeholder quotes with real, attributable
+      quotes (ask permission first).
+- [ ] **Email.** Change `hello@arpanmagar.com` in the contact section to your
+      real address. Add a WhatsApp/phone link if you want enquiries there.
+- [ ] **Contact form.** Create a free form endpoint at
+      [Formspree](https://formspree.io) or use Netlify Forms, then set the
+      `<form action="...">` value (currently `REPLACE_ME`).
+- [ ] **URLs.** If you use a custom domain, update the `canonical`, Open Graph
+      `og:url`, `sitemap.xml`, and `robots.txt` URLs (currently the GitHub
+      Pages URL `https://jarghaa.github.io/Jarghaa-portfolio/`).
+
+## Publish with GitHub Pages
+
+The repo already includes a Pages workflow that deploys on every push to
+`main`:
+
+1. Push `main` to GitHub.
+2. Repo **Settings → Pages → Build and deployment → Source: GitHub Actions**.
+3. The site goes live at `https://jarghaa.github.io/Jarghaa-portfolio/`.
+
+### Custom domain (recommended: `arpanmagar.com`)
+
+1. Add a `CNAME` file containing just your domain (e.g. `arpanmagar.com`).
+2. In **Settings → Pages → Custom domain**, enter the same domain.
+3. Point DNS (A records to GitHub Pages IPs, or a CNAME for `www`) as GitHub
+   instructs. HTTPS is issued automatically.
 
 ## Edit the site
 
-- Open `index.html` and change the text directly. Roles and dates are in the `Career` section.
-- To add photos, put them in `assets/images/` and reference them with `<img src="assets/images/your-photo.jpg" alt="Describe the piece">`.
-- Preview locally by double-clicking `index.html`, or run `python3 -m http.server` in this folder and open http://localhost:8000.
+- Text lives in `index.html`; styles live in `assets/theme.css`.
+- Preview locally:
+  ```bash
+  python3 -m http.server
+  # then open http://localhost:8000
+  ```
 
-## Custom domain (optional)
+## Roadmap (next phases)
 
-Add a file named `CNAME` containing your domain (for example `arpanmagar.com`), then set the same domain under **Settings → Pages** and point your DNS to GitHub Pages.
+- Publish 1–2 blog posts / notes for thought leadership and SEO.
+- Keep LinkedIn updated to mirror the site.
+- Pitch the founder story to Nepali business media for PR.
+- Register Jarghaa on Crunchbase/F6S for investor discovery.
+- Add a newsletter (Mailchimp) for investor updates.
+- Optional: a Nepali-language toggle.
