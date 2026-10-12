@@ -8,7 +8,7 @@
 <meta name="author" content="Arpan Jargha Magar">
 <meta name="keywords" content="Arpan Jargha Magar, Jarghaa Furniture, handmade furniture Nepal, luxury furniture Lalitpur, Nepali entrepreneur, furniture manufacturer Nepal, custom furniture Kathmandu">
 <meta name="robots" content="index, follow">
-<meta name="theme-color" content="#17120E">
+<meta name="theme-color" content="#0B2447">
 <link rel="canonical" href="https://jarghaa.github.io/Jarghaa-portfolio/">
 
 <!-- Open Graph / social sharing -->
@@ -16,7 +16,7 @@
 <meta property="og:title" content="Arpan Jargha Magar · Founder, Jarghaa Furniture">
 <meta property="og:description" content="Entrepreneur and founder of Jarghaa Furniture — luxury handmade furniture from Lalitpur, Nepal. Open to partnerships and investment.">
 <meta property="og:url" content="https://jarghaa.github.io/Jarghaa-portfolio/">
-<meta property="og:image" content="https://jarghaa.github.io/Jarghaa-portfolio/assets/headshot.jpg">
+<meta property="og:image" content="https://jarghaa.github.io/Jarghaa-portfolio/assets/images/headshot.jpg">
 <meta property="og:site_name" content="Arpan Jargha Magar">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Arpan Jargha Magar · Founder, Jarghaa Furniture">
@@ -24,7 +24,7 @@
 <meta name="twitter:image" content="https://jarghaa.github.io/Jarghaa-portfolio/assets/headshot.jpg">
 
 <!-- Favicon (inline SVG monogram) -->
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2317120E'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' fill='%23D2A94C' text-anchor='middle'%3EAM%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230B2447'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' fill='%23D9B65C' text-anchor='middle'%3EAM%3C/text%3E%3C/svg%3E">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -58,14 +58,7 @@
         </div>
       </div>
       <figure class="portrait">
-        <img src="assets/headshot.jpg" alt="Portrait of Arpan Jargha Magar" width="800" height="800" loading="eager"
-             onerror="this.hidden=true;this.nextElementSibling.hidden=false">
-        <svg class="joint" hidden viewBox="0 0 400 300" role="img" aria-label="Two wooden boards locking together with a dovetail joint">
-          <g class="a"><path d="M30 40H200V80L240 70V120L200 110V170L240 160V210L200 200V260H30Z" fill="#6B4429" stroke="#D2A94C" stroke-width="3" stroke-linejoin="round"/>
-            <path d="M45 70H180M45 120H180M45 170H180M45 220H180" stroke="#D2A94C" stroke-opacity=".25" stroke-width="2"/></g>
-          <g class="b"><path d="M200 40V80L240 70V120L200 110V170L240 160V210L200 200V260H370V40Z" fill="#8A5C3A" stroke="#D2A94C" stroke-width="3" stroke-linejoin="round"/>
-            <path d="M255 70H355M255 120H355M255 170H355M255 220H355" stroke="#D2A94C" stroke-opacity=".25" stroke-width="2"/></g>
-        </svg>
+        <img src="assets/images/headshot.jpg" alt="Portrait of Arpan Jargha Magar" width="800" height="800" loading="eager">
       </figure>
     </div>
   </div>
@@ -217,20 +210,20 @@
     <div class="contact-grid">
       <div>
         <div class="btns">
-          <!-- Contact channels: email, WhatsApp, LinkedIn, Facebook -->
-          <a class="btn main" href="mailto:jarghaa3314@gmail.com">jarghaa3314@gmail.com</a>
+          <!-- Email is assembled by JavaScript (see the script at the bottom) so scrapers cannot harvest it. -->
+          <a class="btn main" id="email-link" href="#" rel="nofollow">Email me</a>
           <a class="btn wa" href="https://wa.me/9779818654453">WhatsApp me</a>
           <a class="btn alt" href="https://www.linkedin.com/in/arpan-magar-98564b136/">LinkedIn</a>
           <a class="btn alt" href="https://www.facebook.com/jarghaa">Facebook · Jarghaa</a>
         </div>
-        <p class="todo">Prefer email for formal or investment enquiries — or message WhatsApp for a fast, informal reply.</p>
+        <p class="todo">Your address is never printed in the page source — it is built by JavaScript only when someone clicks “Email me”.</p>
       </div>
-      <!-- Set the form "action" to your Formspree/Netlify endpoint (see README). -->
-      <form class="form" method="post" action="https://formspree.io/f/REPLACE_ME">
-        <label>Name<input type="text" name="name" required autocomplete="name"></label>
-        <label>Email<input type="email" name="email" required autocomplete="email"></label>
+      <form class="form" id="contact-form">
+        <label>Your name<input type="text" name="name" required autocomplete="name"></label>
+        <label>Your email<input type="email" name="email" required autocomplete="email"></label>
         <label>Message<textarea name="message" required></textarea></label>
         <button class="btn main" type="submit">Send message</button>
+        <p class="note">Opens your email app with the message ready to send. Nothing is stored on this site.</p>
       </form>
     </div>
   </div>
@@ -238,8 +231,16 @@
 
 <footer>
   <div class="wrap">
-    <span>© <span id="year">2025</span> Arpan Jargha Magar · Lalitpur, Nepal</span>
-    <span>Founder, <a href="https://www.facebook.com/jarghaa">Jarghaa Furniture</a></span>
+    <div class="foot-top">
+      <svg class="brandmark" viewBox="0 0 400 300" role="img" aria-label="Jarghaa dovetail joint mark">
+        <path d="M30 40H200V80L240 70V120L200 110V170L240 160V210L200 200V260H30Z" fill="none" stroke="#D9B65C" stroke-width="6" stroke-linejoin="round"/>
+        <path d="M200 40V80L240 70V120L200 110V170L240 160V210L200 200V260H370V40Z" fill="none" stroke="#D9B65C" stroke-width="6" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year">2025</span> Arpan Jargha Magar · Lalitpur, Nepal</span>
+      <span>Founder, <a href="https://www.facebook.com/jarghaa">Jarghaa Furniture</a></span>
+    </div>
   </div>
 </footer>
 
@@ -259,7 +260,33 @@
   "sameAs": ["https://www.linkedin.com/in/arpan-magar-98564b136/"]
 }
 </script>
-<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+<script>
+(function(){
+  /* The address is split into character codes and rebuilt in the browser,
+     so it never appears as plain text in the page source. */
+  var user=[106,97,114,103,104,97,97,51,51,49,52];
+  var dom=[103,109,97,105,108,46,99,111,109];
+  var at=String.fromCharCode(64);
+  var addr=String.fromCharCode.apply(null,user)+at+String.fromCharCode.apply(null,dom);
+  var link=document.getElementById('email-link');
+  if(link){link.setAttribute('href','mailto:'+addr);}
+  var form=document.getElementById('contact-form');
+  if(form){
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      var f=form.elements;
+      var name=(f.name.value||'').trim();
+      var email=(f.email.value||'').trim();
+      var msg=(f.message.value||'').trim();
+      if(!name||!email||!msg){alert('Please fill in every field.');return;}
+      var subject=encodeURIComponent('Website enquiry from '+name);
+      var body=encodeURIComponent(msg+'\n\n— '+name+' ('+email+')');
+      window.location.href='mailto:'+addr+'?subject='+subject+'&body='+body;
+    });
+  }
+  var y=document.getElementById('year'); if(y){y.textContent=new Date().getFullYear();}
+})();
+</script>
 </body>
 </html>
 
