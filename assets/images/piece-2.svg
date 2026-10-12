@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Handcrafted chair">
+<title>Handcrafted chair</title>
+<rect width="400" height="300" fill="#0B2447"/>
+<g fill="none" stroke="#D9B65C" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M152 68v98"/>
+  <path d="M152 166h112"/>
+  <path d="M152 166v82M264 166v82"/>
+  <path d="M152 94h66M152 122h66"/>
+</g>
+</svg>

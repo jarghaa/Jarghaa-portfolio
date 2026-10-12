@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Bespoke dining table">
+<title>Bespoke dining table</title>
+<rect width="400" height="300" fill="#0B2447"/>
+<g fill="none" stroke="#D9B65C" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M70 118h260"/>
+  <path d="M98 118v98M302 118v98"/>
+  <path d="M126 180h148"/>
+</g>
+</svg>
