@@ -48,21 +48,19 @@ Jarghaa-portfolio/
 
 Search the code for `TODO` (comments) and the visible placeholders:
 
-- [ ] **Photos.** Drop real images into `assets/images/` (gallery pieces, an
-      `og-cover.jpg` for link previews, and a headshot). Update the `alt` text
-      in `index.html`.
+- [ ] **Photos.** Drop gallery images into `assets/images/` and add an
+      `og-cover.jpg` for link previews. Update the `alt` text in `index.html`.
+      (The headshot is already set: `assets/headshot.jpg`.)
 - [ ] **Stats.** Replace the figures in the "By the numbers" section on
       `index.html` and the "Traction & financials" section on `invest.html`.
 - [ ] **Testimonials.** Replace the placeholder quotes on `index.html` with
       real, attributable quotes (ask permission first).
 - [x] **Email.** Set to `jarghaa3314@gmail.com` on the home and investor pages.
-- [ ] **WhatsApp.** Replace the placeholder number `9770000000000` in the
-      `wa.me` links (home + investor page) with your real number in
-      international format, digits only (e.g. `9779812345678`). Consider
-      WhatsApp Business for a catalogue and auto-replies.
-- [ ] **Headshot.** Save your portrait as `assets/images/headshot.jpg`
-      (square, ~800×800). The hero falls back to the dovetail graphic until
-      the file exists.
+- [x] **WhatsApp.** Set to `+977 9818654453` (`https://wa.me/9779818654453`)
+      on the home and investor pages. Consider WhatsApp Business for a
+      catalogue and auto-replies.
+- [x] **Headshot.** Added as `assets/headshot.jpg` and shown in the hero
+      (the dovetail graphic is the fallback).
 - [ ] **Contact forms.** Create a free form endpoint at
       [Formspree](https://formspree.io) or use Netlify Forms, then set the
       `<form action="...">` value on both forms (currently `REPLACE_ME`).
